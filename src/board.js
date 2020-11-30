@@ -3,6 +3,10 @@ class Board {
 		this.board = '+-+-+-+\n| | | |\n+-+-+-+\n| | | |\n+-+-+-+\n| | | |\n+-+-+-+';
 	}
 
+	grid() {
+		return Array(3);
+	}
+
 	print() {
 		const asciiBoard = this.board;
 		console.log(asciiBoard);

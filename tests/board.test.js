@@ -1,6 +1,14 @@
 const { Board } = require('../src/board');
 const boardStubs = require('./testDoubles/board.stubs');
 
+describe('Board is created as a 3x3 grid of squares', () => {
+	const board = new Board();
+
+	it('should be of height 3', () => {
+		expect(board.grid().length).toBe(3);
+	});
+});
+
 describe('I can step on a square and reveal it', () => {
 	const board = new Board();
 
