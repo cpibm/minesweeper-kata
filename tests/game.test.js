@@ -11,7 +11,11 @@ describe('Game Creation phase', () => {
 
 describe('Game is Over when stepping on square with a bomb', () => {
 	const game = new Game();
-	it('should step on square with bomb on (1,1) mark game as over', () => {
+
+	it('should step on clean square (0,0) and continue game', () => {
+		expect(game.stepOn(0, 0)).toBe('');
+	});
+	it('should step on square with bomb on (1,1) and mark game as over', () => {
 		expect(game.stepOn(1, 1)).toBe(gameStubs.gameOver);
 	});
 });
