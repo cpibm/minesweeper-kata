@@ -10,8 +10,8 @@ UAT Scenarios:
 	- Can I save that log to a file?
 
 Game Over
-- 🚧 Step on a square (1, 1);
-- Square should be reveled
-	- It will be a bomb
+- ✅ Step on a square (1, 1);
+- ✅ Square should be reveled
+	- 🚧 It will be a bomb
 - Game will be over
 - Print board reflecting the exploded bomb with and 'X'
