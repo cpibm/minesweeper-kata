@@ -5,8 +5,12 @@ class Game {
 		this.board = new Board();
 	}
 
-	stepOn() {
-		return 'BOOM! – Game Over';
+	stepOn(x, y) {
+		this.board.stepOn(x, y);
+		if (this.board.squareOn(x, y).isBomb()) {
+			return 'BOOM! – Game Over';
+		}
+		return '';
 	}
 }
 

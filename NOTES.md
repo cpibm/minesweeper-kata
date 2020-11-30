@@ -13,5 +13,5 @@ Game Over
 - ✅ Step on a square (1, 1);
 - ✅ Square should be revealed
 	- ✅ It will be a bomb
-- Game will be over
+- ✅ Game will be over
 - Print board reflecting the exploded bomb with and 'X'
