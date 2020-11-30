@@ -4,7 +4,7 @@ class Board {
 	}
 
 	grid() {
-		return Array(3);
+		return Array(3).fill(Array(3));
 	}
 
 	print() {
