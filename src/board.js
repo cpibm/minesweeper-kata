@@ -22,6 +22,7 @@ class Board {
 
 	squareOn(x, y) {
 		return {
+			reveal: () => 3,
 			isBomb: () => x === 1 && y === 1,
 		};
 	}

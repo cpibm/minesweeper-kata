@@ -31,4 +31,9 @@ describe('I can step on a square and reveal it', () => {
 	it('should reveal if square (1,1) is a bomb', () => {
 		expect(board.squareOn(1, 1).isBomb()).toBe(true);
 	});
+
+	it('sould reveal number of bombs around clean square', () => {
+		board.stepOn(0, 0);
+		expect(board.squareOn(0, 0).reveal()).toBe(3);
+	});
 });
