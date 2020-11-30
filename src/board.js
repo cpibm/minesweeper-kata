@@ -14,6 +14,12 @@ class Board {
 			this.board = '+-+-+-+\n| | | |\n+-+-+-+\n| |X| |\n+-+-+-+\n| | | |\n+-+-+-+';
 		}
 	}
+
+	squareOn(x, y) {
+		return {
+			isBomb: () => x === 1 && y === 1,
+		};
+	}
 }
 
 module.exports = { Board };
