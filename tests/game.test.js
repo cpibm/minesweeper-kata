@@ -27,3 +27,19 @@ describe('Clean squares', () => {
 		expect(game.board.print()).toBe(boardStubs.steppedOn0_0);
 	});
 });
+
+describe('Mark bombs around', () => {
+	const game = new Game();
+	it('should step on clean square (0,0) and continue game', () => {
+		expect(game.stepOn(0, 0)).toBe('');
+	});
+
+	it('should print revealed square with 3 bombs around', () => {
+		expect(game.board.print()).toBe(boardStubs.steppedOn0_0);
+	});
+
+	it('should mark bombs around square', () => {
+		game.markBombsAround(0, 0);
+		expect(game.board.print()).toBe(boardStubs.markedBombsAround0_0);
+	});
+});

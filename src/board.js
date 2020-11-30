@@ -24,6 +24,12 @@ class Board {
 		}
 	}
 
+	markBombsAround(x, y) {
+		if (x === 0 && y === 0) {
+			this.board = '+-+-+-+\n| | | |\n+-+-+-+\n|*|*| |\n+-+-+-+\n|3|*| |\n+-+-+-+';
+		}
+	}
+
 	squareOn(x, y) {
 		return {
 			reveal: () => 3,

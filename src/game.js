@@ -12,6 +12,10 @@ class Game {
 		}
 		return '';
 	}
+
+	markBombsAround(x, y) {
+		this.board.markBombsAround(x, y);
+	}
 }
 
 module.exports = { Game };
