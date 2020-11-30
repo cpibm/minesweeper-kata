@@ -4,7 +4,8 @@ class Board {
 	}
 
 	grid() {
-		return Array(3).fill(Array(3));
+		const row = [{ isBomb: false }, { isBomb: false }, { isBomb: false }];
+		return Array(3).fill(row);
 	}
 
 	print() {

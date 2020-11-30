@@ -12,6 +12,12 @@ describe('Board is created as a 3x3 grid of squares', () => {
 		const [row] = board.grid();
 		expect(row.length).toBe(3);
 	});
+
+	it('should be made of squares', () => {
+		const [row] = board.grid();
+		const [square] = row;
+		expect(typeof square).toBe('object');
+	});
 });
 
 describe('I can step on a square and reveal it', () => {
