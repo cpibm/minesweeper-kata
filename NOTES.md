@@ -14,8 +14,9 @@ Game Over
 - ✅ Square should be revealed
 	- ✅ It will be a bomb
 - ✅ Game will be over
-- Print board reflecting the exploded bomb with and 'X'
+- ✅ Print board reflecting the exploded bomb with and 'X'
 
 
 Clean square (0,0)
- - Get number of bombs around;
+ - ✅ Get number of bombs around;
+ - ✅ Print board reflecting the revealed square

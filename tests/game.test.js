@@ -12,10 +12,18 @@ describe('Game Creation phase', () => {
 describe('Game is Over when stepping on square with a bomb', () => {
 	const game = new Game();
 
+	it('should step on square with bomb on (1,1) and mark game as over', () => {
+		expect(game.stepOn(1, 1)).toBe(gameStubs.gameOver);
+	});
+});
+
+describe('Clean squares', () => {
+	const game = new Game();
 	it('should step on clean square (0,0) and continue game', () => {
 		expect(game.stepOn(0, 0)).toBe('');
 	});
-	it('should step on square with bomb on (1,1) and mark game as over', () => {
-		expect(game.stepOn(1, 1)).toBe(gameStubs.gameOver);
+
+	it('should print revealed square with 3 bombs around', () => {
+		expect(game.board.print()).toBe(boardStubs.steppedOn0_0);
 	});
 });
