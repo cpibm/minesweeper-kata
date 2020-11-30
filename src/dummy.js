@@ -1,5 +1,5 @@
 class Dummy {
-	constructor() {}
+	// constructor() {}
 }
 
 module.exports = { Dummy };
